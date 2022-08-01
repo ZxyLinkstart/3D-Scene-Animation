@@ -39,8 +39,18 @@
 
 .user-details {
   text-align: center;
+  color: brown;
   margin: 5px auto;
   h1 {
+    color: brown;
     font-weight: 400;
   }
+}
+
+.show {
+  text-align: center;
+  h1 {
+    color: brown;
+  }
+  display:felx;
 }
