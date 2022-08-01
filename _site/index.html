@@ -17,7 +17,7 @@
       <div id="particles-js">
   <div class="header">
       <h1>
-        <span class="site-title">3D Scene Animation</span>
+        <span class="site-title">Automatic Generation of 3D Scene Animation Based on Dynamic Knowledge Graphs and Contextual Encoding</span>
         <span class="site-description">Home Page</span>
       </h1>
       <div class="header-icons">
@@ -51,16 +51,59 @@
   <h1>Abstract</h1>
   <p>Although novel 3D animation techniques could be boosted by a large variety of deep learning methods, flexible automatic 3D applications (involving animated figures such as humans and low-life animals) are still rarely studied in 3D computer vision. This is due to lacking of arbitrary 3D data acquisition environment, especially those involving human populated scenes. Given a single image, the 3D animation aided by contextual inference is still plagued by limited reconstruction clues without prior knowledge pertinent to the identified figures/objects and/or their possible relationship w.r.t. the environment. To alleviate such difficulty in time-varying 3D animation, this paper devises a dynamic scene creation framework via a dynamic knowledge graph (DKG). The DKG encodes both temporal and spatial contextual clues to enable and facilitate human interactions with the affordance environment. Furthermore, we construct the DKG-driven Variational Auto-Encoder (DVAE) upon animation kinematics knowledge conveyed by meta-motion sequences, which are disentangled from videos of prior scenes. It is then possible to utilize the DKG to induce the animations in certain scenes, thus, we could automatically and physically generate plausible 3D animations that afford vivid interactions among human, low-life animals, and the surrounding environment. In addition, our DKG network does not need direct supervision towards the production of interactive animations in both space and time domains. This advantage warrants the system training without any additional annotation efforts on existing datasets. The extensive experimental results and comprehensive evaluations confirm our DKGs' representation and modeling power towards new animation production in 3D graphics and vision applications.</p>
 </div>
-<div class="show"  style="text-align: center">
+<div class="show" style="text-align: center">
   <h1>Result</h1>
-  <div style="  display: -webkit-flex; display: flex; flex-direction:row;justify-content:space-between">
-    <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;"> <img src="out/gen_0_1.gif" width=100% /> </div>
-    <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;"> <img src="out/gen_0_1.gif" width=100% /> </div>
-    <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;"> <img src="out/gen_0_1.gif" width=100% /> </div>
-    <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;"> <img src="out/gen_0_1.gif" width=100% /> </div>
-  </div>
 
- 
+  <h3 style="text-align: left">Ride (Based on Videos)</h4>
+    <div style="  display: -webkit-flex; display: flex; flex-direction:row;justify-content:space-between">
+      <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+        <img src="out/ride/riding1_vibe_result.gif" width=100% height=100% />
+      </div>
+      <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+        <img src="out/ride/riding2_vibe_result.gif" width=100% height=100% />
+      </div>
+      <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+        <img src="out/ride/riding3_vibe_result.gif" width=100% height=100% />
+      </div>
+      <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+        <img src="out/ride/riding4_vibe_result.gif" width=100% height=100% />
+      </div>
+    </div>
+
+
+    <h3 style="text-align: left"> Reasoning From DKG</h4>
+      <div style="  display: -webkit-flex; display: flex; flex-direction:row;justify-content:space-between;margin-bottom: 10px;">
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <h4 style="line-height:150px">Riding ---> Holding</h4>
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2hold/ride.png" width=100% height=100% />
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2hold/ride.gif" width=100% height=100% />
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2hold/ride2.gif" width=100% height=100% />
+        </div>
+      </div>
+
+      <div style="  display: -webkit-flex; display: flex; flex-direction:row;justify-content:space-between;margin-bottom: 10px;">
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <h4 style="line-height:150px">Riding ---> Holding a Bike</h4>
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2bike/bike.png" width=100% height=100% />
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2bike/bike1.gif" width=100% height=100% />
+        </div>
+        <div style="border:1px solid #0074BD  ; width: 23%;height: 200px;">
+          <img src="out/ride2bike/bike2.gif" width=100% height=100% />
+        </div>
+      </div>
+
+
+
 </div>
 
 <!-- <div class="user">
@@ -108,11 +151,10 @@
   </div>
 
 </div> -->
-
       </section>
         
       <footer class="footer">
-    <!-- <p>&copy; 3D Scene Animation</p> -->
+    <!-- <p>&copy; Automatic Generation of 3D Scene Animation Based on Dynamic Knowledge Graphs and Contextual Encoding</p> -->
     <p>Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/murraco">Mauricio Urraco</a></p>
 </footer>
 <script src="/assets/js/particles.min.js"></script>
